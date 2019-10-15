@@ -13,6 +13,7 @@
 		6F1290AF23552E2C0008300A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6F1290AD23552E2C0008300A /* Main.storyboard */; };
 		6F1290B123552E2D0008300A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6F1290B023552E2D0008300A /* Assets.xcassets */; };
 		6F1290B423552E2D0008300A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6F1290B223552E2D0008300A /* LaunchScreen.storyboard */; };
+		6F1290BD235671920008300A /* Extensions+UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F1290BC235671920008300A /* Extensions+UIView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		6F1290B023552E2D0008300A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6F1290B323552E2D0008300A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		6F1290B523552E2D0008300A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6F1290BC235671920008300A /* Extensions+UIView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Extensions+UIView.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +58,7 @@
 		6F1290A623552E2C0008300A /* TinderBee */ = {
 			isa = PBXGroup;
 			children = (
+				6F1290BB235671560008300A /* Extensions */,
 				6F1290A723552E2C0008300A /* AppDelegate.swift */,
 				6F1290A923552E2C0008300A /* SceneDelegate.swift */,
 				6F1290AB23552E2C0008300A /* ViewController.swift */,
@@ -65,6 +68,14 @@
 				6F1290B523552E2D0008300A /* Info.plist */,
 			);
 			path = TinderBee;
+			sourceTree = "<group>";
+		};
+		6F1290BB235671560008300A /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				6F1290BC235671920008300A /* Extensions+UIView.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -140,6 +151,7 @@
 			files = (
 				6F1290AC23552E2C0008300A /* ViewController.swift in Sources */,
 				6F1290A823552E2C0008300A /* AppDelegate.swift in Sources */,
+				6F1290BD235671920008300A /* Extensions+UIView.swift in Sources */,
 				6F1290AA23552E2C0008300A /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
