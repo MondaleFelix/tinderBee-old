@@ -16,6 +16,7 @@
 		6F1290BD235671920008300A /* Extensions+UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F1290BC235671920008300A /* Extensions+UIView.swift */; };
 		6F1290C0235678D00008300A /* HomeBottomControlsStackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F1290BF235678D00008300A /* HomeBottomControlsStackView.swift */; };
 		6F1290C223567E400008300A /* TopNavigationStackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F1290C123567E400008300A /* TopNavigationStackView.swift */; };
+		6F1290C4235695570008300A /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F1290C3235695570008300A /* CardView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +31,7 @@
 		6F1290BC235671920008300A /* Extensions+UIView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Extensions+UIView.swift"; sourceTree = "<group>"; };
 		6F1290BF235678D00008300A /* HomeBottomControlsStackView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeBottomControlsStackView.swift; sourceTree = "<group>"; };
 		6F1290C123567E400008300A /* TopNavigationStackView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopNavigationStackView.swift; sourceTree = "<group>"; };
+		6F1290C3235695570008300A /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -88,6 +90,7 @@
 			children = (
 				6F1290BF235678D00008300A /* HomeBottomControlsStackView.swift */,
 				6F1290C123567E400008300A /* TopNavigationStackView.swift */,
+				6F1290C3235695570008300A /* CardView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -163,6 +166,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6F1290C4235695570008300A /* CardView.swift in Sources */,
 				6F1290AC23552E2C0008300A /* ViewController.swift in Sources */,
 				6F1290A823552E2C0008300A /* AppDelegate.swift in Sources */,
 				6F1290C0235678D00008300A /* HomeBottomControlsStackView.swift in Sources */,
