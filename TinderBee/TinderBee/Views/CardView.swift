@@ -70,14 +70,19 @@ class CardView: UIView {
         UIView.animate(withDuration: 1, delay: 0, usingSpringWithDamping: 0.6, initialSpringVelocity: 0.1, options: .curveEaseOut, animations: {
             if shouldDismissCard {
                 self.frame = CGRect(x: 600 * translationDirection, y: 0, width: self.frame.width, height: self.frame.height)
+                self.superview?.subviews.last?.layer.removeAllAnimations()
             } else {
+                // bringing back to starting point
                 self.transform = .identity
             }
+
+
             
         }) { (_) in
             self.transform = .identity
             if shouldDismissCard {
                 self.removeFromSuperview()
+
             }
 
         }
