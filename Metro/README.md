@@ -1,4 +1,4 @@
-# Flickster
+# Metro Time App
 
 
 
@@ -12,22 +12,26 @@ Metro Time is an iOS app that tells you when the next bus arrives in Los Angeles
 
 
 ### User Instructions
-___
+
 
 Metro Time is currently in production and not ready for use. When available, users can just download it from the Apple App Store. 
 
+
 ### Technologies used
-___
+
 Metro Time is an iOS application. It was built with xcode 11 and Swift 5. I also used the Metro API to get the time of the buses.
 
+
 ### Design
-___
+
+
 
 Metro Time is designed to be easy to use. A big market of Metro users are elderly folk, so I designed it to be easy to use and intuitive. Current solutions of displaying bus stop times are not abstracted so it is not easy to use. Metro Time will only have two view controllers and easy to read text. 
 
 
 
 ### Unsolved problems
-___
+
+
 
 1) Currently, the application is limited to one view controller, getting input from an alert/modal. Once I learn how to pass data from one view controller to another, I will have it fixed.
