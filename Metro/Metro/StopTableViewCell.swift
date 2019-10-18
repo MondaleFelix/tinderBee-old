@@ -10,12 +10,16 @@ import UIKit
 
 class StopTableViewCell: UITableViewCell {
     
+    
+    
     init() {
         super.init(style: .default, reuseIdentifier: "stopID")
     }
     
     override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
         super.init(style: style, reuseIdentifier: reuseIdentifier)
+        
+        
     }
     
     required init?(coder: NSCoder) {
