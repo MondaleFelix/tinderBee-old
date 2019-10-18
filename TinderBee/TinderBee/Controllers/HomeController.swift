@@ -13,13 +13,13 @@ class HomeController: UIViewController {
     let cardsDeckView = UIView()
     let buttonStackView = HomeBottomControlsStackView()
 
-
-    let cardViewModels = [
-        User(name: "Kelly", age: 23, profession: "Music DJ", imageName: "lady5c").toCardViewModel(),
-        User(name: "Jane", age: 18, profession: "Teacher", imageName: "lady4c").toCardViewModel(),
-        Advertiser(title: "Slide Out Menu", brandName: "Mondeezy Threads", posterPhotoName: "slide_out_menu_poster").toCardViewModel()
-    ]
-    
+    let cardViewModels: [CardViewModel] = {
+        let producers = [
+        
+        ]
+        
+        let viewModels = producers.map
+    }
 
     
     override func viewDidLoad() {

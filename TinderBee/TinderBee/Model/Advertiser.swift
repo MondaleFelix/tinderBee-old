@@ -9,7 +9,7 @@
 import Foundation
 import UIKit
 
-struct Advertiser {
+struct Advertiser: ProduceCardViewModel {
     let title: String
     let brandName: String
     let posterPhotoName: String

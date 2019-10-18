@@ -9,7 +9,7 @@
 import Foundation
 import UIKit
  
-struct User {
+struct User: ProduceCardViewModel {
 //    Defining our properties for our model layer
     
     let name : String
