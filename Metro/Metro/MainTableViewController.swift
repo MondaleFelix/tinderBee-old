@@ -27,7 +27,7 @@ class MainTableViewController: UITableViewController {
         let item = UIBarButtonItem()
         item.title = "\(self.busNumber)"
         item.target = self
-        item.action = #selector(presentAlert)
+        item.action = #selector(presentBusNumberAlert)
         return item
     }()
     
@@ -65,6 +65,22 @@ class MainTableViewController: UITableViewController {
         alert.addAction(UIAlertAction(title: "Cancel", style: .default, handler: nil))
         present(alert, animated: true)
     }
+    
+    @objc func presentBusNumberAlert() {
+        let alert = UIAlertController(title: "Choose a stop", message: "Enter your bus number", preferredStyle: .alert)
+        alert.addTextField { (textField) in
+            textField.placeholder = "Bus Number e.g. 2"
+        }
+        alert.addAction(UIAlertAction(title: "OK", style: .default, handler: { _ in
+            guard let enteredBusNumber = alert.textFields?[0].text else { return }
+            self.busNumber = Int(enteredBusNumber) ?? 2
+            self.busNumberButton.title = String(enteredBusNumber)
+            
+        }))
+        alert.addAction(UIAlertAction(title: "Cancel", style: .default, handler: nil))
+        present(alert, animated: true)
+    }
+    
     
     func makeNetworkRequest(stopId: String) {    AF.request("https://api.metro.net/agencies/lametro/routes/\(self.busNumber)/stops/\(stopId)/predictions/").response { response in
         guard let data = response.data else { return }
